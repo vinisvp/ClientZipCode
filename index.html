@@ -14,7 +14,7 @@
         <h4>Cadastro de Clientes:</h4>
     </header>
     <main>
-        <div class="container shadow-lg p-5 mt-5 rounded">
+        <div class="container shadow-lg p-5 my-5 rounded">
             <section> <!--Form-->
                 <form id="formClient">
                     <div class="row mb-3 row-gap-3">
@@ -59,7 +59,30 @@
                 </form>
             </section>
             <section> <!--Table-->
-
+                <table class="table mt-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome Completo</th>
+                        <th scope="col" class="d-none d-md-table-cell">Endereço</th>
+                        <th scope="col">CEP</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Bairro</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Cidade</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <td>Glauco Todesco</td>
+                        <td class="d-none d-md-table-cell">Rua Leite Penteado, 999</td>
+                        <td>18010-050</td>
+                        <td class="d-none d-lg-table-cell">Centro</td>
+                        <td class="d-none d-lg-table-cell">Sorocaba</td>
+                        <td class="d-none d-lg-table-cell">SP</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </section>
         </div>
     </main>
