@@ -16,7 +16,7 @@
     <main>
         <div class="container shadow-lg p-5 my-5 rounded">
             <section> <!--Form-->
-                <form id="formClient"> <!--TODO Make the form responsive-->
+                <form onsubmit="addClient(); return false" id="formClient"> <!--TODO Make the form responsive-->
                     <div class="row mb-3 row-gap-3">
                         <div class="col-6">
                             <label for="inputName" class="form-label">Nome:</label>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-3">
                             <label for="inputNum" class="form-label">Número:</label>
-                            <input type="text" class="form-control" id="inputNum" disabled required>
+                            <input type="number" class="form-control" id="inputNum" disabled required>
                         </div>
                         <div class="col-6">
                             <label for="inputDistrict" class="form-label">Bairro:</label>
@@ -59,7 +59,7 @@
                 </form>
             </section>
             <section> <!--Table-->
-                <table class="table mt-5">
+                <table id="clientsTable" class="table mt-5">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -72,15 +72,6 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th>1</th>
-                        <td>Glauco Todesco</td>
-                        <td class="d-none d-md-table-cell">Rua Leite Penteado, 999</td>
-                        <td>18010-050</td>
-                        <td class="d-none d-lg-table-cell">Centro</td>
-                        <td class="d-none d-lg-table-cell">Sorocaba</td>
-                        <td class="d-none d-lg-table-cell">SP</td>
-                      </tr>
                     </tbody>
                   </table>
             </section>
