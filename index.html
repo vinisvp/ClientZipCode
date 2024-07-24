@@ -16,7 +16,7 @@
     <main>
         <div class="container shadow-lg p-5 my-5 rounded">
             <section> <!--Form-->
-                <form id="formClient">
+                <form id="formClient"> <!--TODO Make the form responsive-->
                     <div class="row mb-3 row-gap-3">
                         <div class="col-6">
                             <label for="inputName" class="form-label">Nome:</label>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-3">
                             <label for="inputZipCode" class="form-label">Pesquise pelo CEP:</label>
-                            <input type="text" class="form-control" id="inputZipCode" required>
+                            <input type="text" onblur="showZipCode()" class="form-control" id="inputZipCode" required>
                         </div>
                     </div>
                     <div class="row row-gap-3">
